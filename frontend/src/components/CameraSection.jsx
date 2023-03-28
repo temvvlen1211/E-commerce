@@ -28,7 +28,7 @@ export default function CameraSection() {
           <div className="carousel-item active ">
             <img
               src="https:/via.placeholder.com/1000x250/img/placeholder"
-              className="d-block  w-100   "
+              className="d-block  w-100  my-3  "
               alt="..."
             />
           </div>
