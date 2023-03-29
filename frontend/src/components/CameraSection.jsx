@@ -1,53 +1,37 @@
+// home page iin canon camera heseg
+import React, { useState } from "react";
+import Carousel from "react-bootstrap/Carousel";
+
 export default function CameraSection() {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex, e) => {
+    setIndex(selectedIndex);
+  };
+
   return (
-    <>
-      <div className="carousel slide " dataRide="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div className="carousel-inner ">
-          <div className="carousel-item active ">
-            <img
-              src="https:/via.placeholder.com/1000x250/img/placeholder"
-              className="d-block  w-100  my-3  "
-              alt="..."
-            />
+    <div className="container my-5  ">
+      <Carousel activeIndex={index} onSelect={handleSelect}>
+        {/* map ashiglanaa martvaa */}
+        <Carousel.Item style={{ height: "350px" }}>
+          <div className="d-flex justify-content-evenly ">
+            <div className=" d-flex align-items-center">
+              <div>
+                <div>
+                  <h1 className="w-50 my-4    "> Canon Camera</h1>
+                </div>
+                <div className="d-flex gap-3">
+                  <button className="btn btn-warning text-white">
+                    Shop now
+                  </button>
+                  <button className="btn btn-outline-primary">View more</button>
+                </div>
+              </div>
+            </div>
+            <img src={"svg/camera.svg"} alt="First slide" />
           </div>
-          <div className="carousel-item">
-            <img
-              src="https:/via.placeholder.com/1000x250/img/placeholder"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-          <div className="carousel-item">
-            <img
-              src="https:/via.placeholder.com/1000x250/img/placeholder"
-              className="d-block w-100"
-              alt="..."
-            />
-          </div>
-        </div>
-      </div>
-    </>
+        </Carousel.Item>
+      </Carousel>
+    </div>
   );
 }
