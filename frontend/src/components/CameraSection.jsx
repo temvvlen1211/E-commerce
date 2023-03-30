@@ -10,7 +10,7 @@ export default function CameraSection() {
   };
 
   return (
-    <div className="container my-5  ">
+    <div className="container my-5   ">
       <Carousel activeIndex={index} onSelect={handleSelect}>
         {/* map ashiglanaa martvaa */}
         <Carousel.Item style={{ height: "350px" }}>
