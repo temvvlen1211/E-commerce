@@ -1,3 +1,9 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+.on {
+  color: #eda415;
+}
+.off {
+  color: #ccc;
+}
