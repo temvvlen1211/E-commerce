@@ -18,7 +18,7 @@ export default function CameraSection() {
             <div className=" d-flex align-items-center">
               <div>
                 <div>
-                  <h1 className="w-50 my-4    "> Canon Camera</h1>
+                  <h1 className="w-50 my-4"> Canon Camera</h1>
                 </div>
                 <div className="d-flex gap-3">
                   <button className="btn btn-warning text-white">

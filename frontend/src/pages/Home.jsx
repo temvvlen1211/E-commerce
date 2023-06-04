@@ -1,5 +1,6 @@
 import CameraSection from "../components/CameraSection";
 import Navbar from "../components/Navbar";
+import NotebookSection from "../components/NotebookSection";
 import PopularProducts from "../components/PopularProducts";
 import ProductSection from "../components/ProductSection";
 
@@ -10,6 +11,7 @@ export default function Home() {
       <CameraSection />
       <ProductSection />
       <PopularProducts />
+      <NotebookSection />
     </>
   );
 }
