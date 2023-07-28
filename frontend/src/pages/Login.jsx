@@ -19,7 +19,7 @@ export default function SignUp() {
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">
-            Password
+            Password  
           </label>
           <input
             type="password"
